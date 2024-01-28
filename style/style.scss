@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Roboto+Slab:wght@300&display=swap");
+$font: "Roboto Slab";
+
+.all {
+  display: grid;
+  grid-template: 13vh 77vh 10vh/40% 60%;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 900px;
+  margin: 0 auto;
+}
+.header {
+  grid-area: 1/1/2/3;
+  display: grid;
+  grid-template: 1fr/40% 60%;
+  align-items: end;
+  padding: 0 3%;
+}
+.header__logo {
+  grid-area: 1/1/2/2;
+  width: 201px;
+  height: 40px;
+}
+.header__btn {
+  grid-area: 1/2/2/3;
+  justify-self: end;
+}
+main {
+  grid-template: 1fr/40% 60%;
+  grid-area: 2/1/3/3;
+  display: grid;
+}
+.main-info {
+  grid-area: 1/1/2/2;
+  display: block;
+  padding-left: 13%;
+  max-width: 25vw;
+  .main-info__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: 4px;
+    font-family: "fira sans";
+    margin-bottom: 0;
+  }
+  .main-info__text {
+    font-family: $font;
+    font-size: 1vw;
+    line-height: 1.6;
+  }
+}
+.main-pic {
+  grid-area: 2/2/4/3;
+
+  .main-pic__img {
+    max-height: 600px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+footer {
+  grid-template: 1fr /40% 60%;
+  grid-area: 3/1/4/3;
+  display: grid;
+  .menu {
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 13%;
+    .menu__item {
+      list-style: none;
+      font-family: $font;
+      font-size: 1vw;
+      color: #5222d0;
+      cursor: pointer;
+    }
+  }
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn_sm {
+  width: 115px;
+  height: 38px;
+}
+
+//для второй страницы//
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3vw;
+  letter-spacing: 4px;
+  font-family: "fira sans";
+}
+.card {
+  display: block;
+  padding: 2vw;
+  .card__img {
+    max-height: 270px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    font-family: "fira sans";
+    margin-bottom: 0;
+  }
+  .card__text {
+    font-family: $font;
+    font-size: 1vw;
+    line-height: 1.6;
+  }
+}
+.base {
+  padding-left: 7.5%;
+  padding-right: 6%;
+
+  .container {
+    grid-area: 2/1/3/3;
+    display: grid;
+    grid-template: 1fr min-content / repeat(3, 1fr);
+  }
+}
+.card__body_subscribe {
+  background-color: #ec615b;
+  height: 100%;
+  padding-left: 1vw;
+}
+.card__title_subscribe {
+  color: white;
+  margin: 0;
+  padding-top: 1.5vw;
+}
+.subscribe {
+  margin: 5% 0 5% 0;
+}
